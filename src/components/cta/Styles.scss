@@ -1,0 +1,38 @@
+@import '../../Main.scss';
+
+.gpt3__cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin: 4rem;
+  border-radius: 1rem;
+  background: $gradient-bar;
+}
+
+.gpt3__cta-btn button {
+  background: $color-bg;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+
+  &:hover {
+    background: rgba(0, 0, 0, 2);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .gpt3__cta {
+    flex-direction: column;
+    padding: 1rem;
+    margin: 2rem;
+  }
+
+  .gpt3__cta-btn button {
+    margin-top: 1rem;
+  }
+}
