@@ -41,5 +41,5 @@ export const Features = () => {
         ))}
       </div>
     </section>
-  );
+  )
 }

@@ -1,0 +1,57 @@
+@import '../../Main.scss';
+
+.gpt3__possibility {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.gpt3__possibility-image {
+  width: 100%;
+  height: auto;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.gpt3__possibility-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  padding-left: 1rem;
+
+  h4 {
+    color: $color-text;
+  }
+
+  h2 {
+    margin: 1rem 0;
+  }
+
+  p {
+    color: $color-text;
+    margin-bottom: 2rem;
+  }
+
+  span {
+    color: $color-subtext;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .gpt3__possibility {
+    flex-direction: column;
+  }
+
+  .gpt3__possibility-text {
+    padding-left: 0;
+    h4 {
+      margin-top: 1rem;
+    }
+  }
+  
+}
