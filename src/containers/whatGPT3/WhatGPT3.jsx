@@ -4,7 +4,7 @@ import './Styles.scss'
 
 export const WhatGPT3 = () => {
   return (
-    <div className="gpt3__whatgpt3" id="wgpt3">
+    <section className="gpt3__whatgpt3" id="wgpt3">
       <div className="gpt3__whatgpt3-feature">
         <Feature
           title="What is GPT-3"
@@ -31,6 +31,6 @@ export const WhatGPT3 = () => {
           text='At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b'
         />
       </div>
-    </div>
-  );
+    </section>
+  )
 }
