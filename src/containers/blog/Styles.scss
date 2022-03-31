@@ -1,0 +1,36 @@
+@import '../../Main.scss';
+
+.gpt3__blog {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.gpt3__blog__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gpt3__blog__contentA {
+  width: 100%;
+  height: 100%;
+}
+
+.gpt3__blog__contentB {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .gpt3__blog__content {
+    grid-template-columns: 1fr;
+  }
+
+  .gpt3__blog__contentB {
+    grid-template-columns: 1fr;
+  }
+}
